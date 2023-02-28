@@ -1,0 +1,256 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	/* background-color:red */
+}
+/* .........................................helper css................... */
+
+body{
+	line-height:1.5;
+}
+ul{
+	list-style:none;
+}
+a:link, a:visited{
+	text-decoration:none;
+	color:#010101;
+}
+
+.container{
+	width:1100px;
+	margin:0 auto;
+}
+.text-center{
+	text-align:center;
+}
+.row,
+.row::before,
+.row::after {
+	display:table;
+	width:100%;
+	clear:both;
+}
+[class^="col-"]{
+	float:left;
+	padding:0 15px;
+	/* border:2px solid black; */
+}
+
+.header-section{
+	background-color:#fcdb00;
+	padding:60px 0 160px;
+	
+}
+
+
+.col-1{
+	width: calc(100% * 1 / 12);
+}
+
+.col-2{
+	width: calc(100% * 2 / 12);
+}
+
+.col-3{
+	width: calc(100% * 3 / 12);
+}
+
+.col-4{
+	width: calc(100% * 4 / 12);
+}
+.col-5{
+	width: calc(100% * 5 / 12);
+}
+.col-9{
+	width: calc(100% * 9 / 12);
+}
+
+.col-10{
+	width: calc(100% * 10 / 12);
+	/* border:2px solid red; */
+}
+
+
+.col-7{
+	width: calc(100% * 7 / 12);
+}
+
+.navbar{
+	text-align:right;
+}
+.navbar ul{
+	list-style:none;
+	display:inline-block;
+}
+.navbar ul li{
+	display:inline-block;
+	margin:0 20px;
+	
+}
+.logo{
+	display:inline-block;
+	height:51px;
+	line-height:51px;
+	/* padding:10px; */
+}
+.navbar li a:link, .navbar li a:visited{
+	text-decoration:none;
+	color:#010101;
+	font-size:22px;
+	padding: 0px 15px;
+	text-transform:capitalize;
+	transition: all .3s;
+	height: 51px;
+	display:inline-block;
+	line-height:51px;
+}
+.navbar li a:hover, .navbar li a:focus, .navbar li a:active{
+	background-color: #010101;
+	color: #fcdb00;
+	border-radius: 5px;
+	
+}
+
+
+.navbar ul li:last-child{
+	margin:0px;
+}
+a.\.index\.html {
+    display: inline-block;
+}
+.mb-60{
+	margin-bottom:60px;
+}
+.mb-65{
+	margin-bottom:65px;
+}
+/* ...........................1st row.................... */
+
+.mb-60{
+	margin-bottom:60px;
+}
+.mb-135{
+	margin-bottom: 135px;
+}
+
+.offset-2{
+	margin-left: calc(100% * 2 / 12);
+}
+.offset-1{
+	margin-left: calc(100% * 1 / 12);
+}
+.pri-heading{
+	font-size:32;
+	font-weight:bold;
+	color:#010101;
+	margin-bottom:20px;
+	font-family: 'Poppins', sans-serif;
+}
+.sec-heading{
+	font-size:20px;
+	color:#313841;
+	margin-bottom:25px;
+	font-family: 'Poppins', sans-serif;
+	
+}
+.para{
+	font-weight:16px;
+	color:#555555;
+	margin-bottom:40px;
+	
+}
+.brands li{
+	display:inline-block;
+	margin: 40px;
+}
+.inspiration{
+	margin-top:70px;
+}
+
+/* .....................................feature-section css....................... */
+
+.features{
+	padding:120px 0 80px;
+}
+.featureHeading{
+	padding: 0 25px;
+}
+.thumbnail{
+	margin-bottom: 80px;
+}
+/* .......................we add margin bottom 80 then we sub from padding 160-80=80 */
+.thumbInfo > h3{
+	font-size: 22px;
+	font-weight: bold;
+	color: #010101;
+	margin-bottom:15px;
+	font-family: 'Poppins', sans-serif;
+}
+.thumbInfo > p{
+	font-size:16px;
+	color:#898989;
+	font-weight:regular;
+	/* line-height:24px; */
+}
+/* ............................in every para we does not take take helper css to use body tag then give css as line height:1.5;it apply */
+
+/* .................................contact css start................. */
+
+.contact-section{
+	padding: 95px 0 135px;
+	background-color: #010101;`
+}
+.contact-section .pri-heading{
+		color: #fcdb00;
+}
+/* ............here use parent child selector.......... */
+
+.text-center{
+	text-align:center;
+}
+.contact-section .sec-heading{
+	color:#898989;
+	margin-bottom:40px;
+}
+.btn-primary, .email{
+	height:50px;
+	border-radius:5px;
+}
+.form-group{
+	margin-bottom: 75px;
+}
+.btn-primary{
+	background-color: #fcdb00;
+	color: #010101;
+	text-transform:uppercase;
+	/* padding: 0 35px; */
+	width: 125px;
+	text-align:center;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 16px;
+	margin-left: 20px;
+}
+/* ......................we adding width 125 + margin-left 20 it is 145 and we add 5 by own then it is 150 ............... */
+.email{
+	width:calc(100% - 150px);
+	padding: 0 25px;
+}
+.email::placeholder{
+	color: #898989;
+}
+.contact-section .brands a:link, a:visited{
+	color: #fcdb00;
+}
+.footer-links li, .footer-links li a:link, .footer-links li a:visited{
+	color: #fff;
+}
+.footer-links li a:link, .footer-links li a:visited{
+	text-transform: capitalize;
+}
+.footer-links ul{
+	text-align: center;
+}
